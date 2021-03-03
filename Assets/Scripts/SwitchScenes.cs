@@ -28,6 +28,11 @@ public class SwitchScenes : MonoBehaviour
         SceneManager.LoadScene("MainPage");
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("WelcomePage");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
