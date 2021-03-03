@@ -58,7 +58,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AbilityText.cs" />
+     <Compile Include="Assets\Scripts\AlignmentSelector.cs" />
+     <Compile Include="Assets\Scripts\ClassSelector.cs" />
      <Compile Include="Assets\Scripts\DetectInput.cs" />
+     <Compile Include="Assets\Scripts\DisplayData.cs" />
+     <Compile Include="Assets\Scripts\JSONOutput.cs" />
+     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\RaceSelection.cs" />
      <Compile Include="Assets\Scripts\SwitchScenes.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

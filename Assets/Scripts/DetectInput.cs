@@ -1,28 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class DetectInput : MonoBehaviour
+
 {
+    //public PlayerManager.Player myPlayer;
     // Start is called before the first frame update
     void Start()
     {
-        var input = gameObject.GetComponent<InputField>();
-        var se= new InputField.SubmitEvent();
-        se.AddListener(displayText);
-        input.onEndEdit = se;
-
-    }
-
-    private void displayText(string textInField)
-    {
-        Debug.Log(textInField);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        gameObject.GetComponent<TMP_InputField>().onEndEdit.AddListener(displayText);
+        gameObject.GetComponent<TMP_InputField>().onEndEdit.AddListener(setName);
+        
         
     }
+
+    public Text TextField;
+    public void setName(string playerName)
+    {
+        PlayerManager._instance.playerName = playerName;
+    }
+    public void displayText(string textInField)
+    {
+        PlayerManager._instance.armorClass = int.Parse(textInField);
+        TextField.text = "Armor Class: " + PlayerManager._instance.armorClass +
+                         "\nWalk speed: " + PlayerManager._instance.walkSpeed +
+                         "\nRun speed: " + PlayerManager._instance.runSpeed +
+                         "\nJump height: " + PlayerManager._instance.jumpHeight;
+    }
+    
 }
