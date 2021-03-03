@@ -26,6 +26,7 @@ public class PlayerManager : MonoBehaviour
     public int maxXp;
     public int currXp;
     public int maxHp;
+    public int currHp;
     public int armorClass;
     public float walkSpeed;
     public float runSpeed;

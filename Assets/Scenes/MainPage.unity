@@ -1296,6 +1296,7 @@ MonoBehaviour:
   maxXp: 0
   currXp: 0
   maxHp: 0
+  currHp: 0
   armorClass: 0
   walkSpeed: 0
   runSpeed: 0
@@ -2152,8 +2153,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4292072442
+  m_fontColor: {r: 0.98039216, g: 0.827451, b: 0.827451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2170,8 +2171,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2679,6 +2680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextField: {fileID: 1606034015}
+  PointsText: {fileID: 1423868858}
   ClassError: {fileID: 1651003745}
 --- !u!1 &561679824
 GameObject:
