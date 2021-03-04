@@ -21,7 +21,6 @@ public class RaceSelection : MonoBehaviour
             RaceErrorText.text = "";
             raceDropdown = GetComponent<TMP_Dropdown>();
             myRace = raceDropdown.options[val].text;
-            //Debug.Log("Race = " + myRace);
             PlayerManager._instance.race = myRace;
         }
     }

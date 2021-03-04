@@ -14,11 +14,6 @@ public class DetectInput : MonoBehaviour
     {
         GameObject.Find("CharacterName").GetComponent<TMP_InputField>().onEndEdit.AddListener(setName);
         GameObject.Find("RedIDInput").GetComponent<TMP_InputField>().onEndEdit.AddListener(displayText);
-        //gameObject.GetComponent<TMP_InputField>().onEndEdit.AddListener(setName);
-        //gameObject.GetComponent<TMP_InputField>().onEndEdit.AddListener(displayText);
-        
-        
-        
     }
 
     public Text TextField;

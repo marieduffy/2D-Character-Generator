@@ -8,7 +8,6 @@ public class JSONOutput : MonoBehaviour
     public void getJSON()
     {
         string json = JsonUtility.ToJson(PlayerManager._instance);
-        Debug.Log(json);
         TextField.text = json;
         TextEditor te = new TextEditor();
         te.text = json;

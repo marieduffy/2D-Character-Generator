@@ -16,10 +16,8 @@ public class DisplayData : MonoBehaviour
         string line;
         string data = "";
         while((line = file.ReadLine()) != null)  
-        {  
-            Debug.Log(line);
+        {
             data += line;
-
         }
 
         Textfield.text = data;
